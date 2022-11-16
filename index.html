@@ -49,9 +49,9 @@ var consent_trial = {
   stimulus: `
   <p style="font-size:20px;"> Welcome! Thank you for your interest in our study. </p>
   <p style="font-size:20px;"> This study is being conducted by researchers at Bowdoin College.</p>
-  <p style="font-size:20px;"> In this experiment, you will be asked to make judgments about the content of different sentences.</p>
-  <p style="font-size:20px;"> The entire experiment should not last more than 30 minutes. You will be paid $3.5 USD for your participation. </p>
-  <p style="font-size:20px;"> Please click <a href = "https://drive.google.com/file/d/1m56PqqGRMrcjHjT3BssO_IP3OhI6QUvY/view?usp=share_link" target = "_blank">here</a> to read the full consent form. </p>
+  <p style="font-size:20px;"> In this experiment, you will be asked to make judgments about the content of different sentences in both English and Spanish.</p>
+  <p style="font-size:20px;"> The entire experiment should not last more than 30 minutes. You will be paid $3 USD for your participation. </p>
+  <p style="font-size:20px;"> Please click <a href = "https://drive.google.com/file/d/1L92a02eEKCpaAEipmqDcBCDR7rsarqFE/view?usp=sharing" target = "_blank">here</a> to read the full consent form. </p>
   <p style="font-size:20px;"> If you agree to participate, please click the button below to continue to experiment instructions.</p>
   `,
   choices: ['I agree to participate'],
@@ -101,7 +101,8 @@ var instructions2 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
   <p style="font-size:20px;"> You are about to begin the practice test. </p>
-  <p style="font-size:20px;"> On each trial, a sentence will appear on the screen. You should press SPACEBAR when you have read and understood the sentence.</p>
+  <p style="font-size:20px;"> On each trial, a sentence will appear on the screen. You should press SPACEBAR when you have read and understood the sentence. </p>
+  <p style="font-size:20px;"> For the practice session, there will be a mix of English and Spanish sentences. </p>
   <p style="font-size:20px;"> After you press SPACEBAR, a picture will appear on the screen. </p>
   <p style="font-size:20px;"> You need to indicate whether or not the pictured object was mentioned in the sentence. </p>
   <p style="font-size:20px;"> If the object WAS mentioned in the preceding sentence, you should press <strong>S</strong> </p>
@@ -224,8 +225,7 @@ trial_duration: function(){
       stimulus: `<p style="font-size:20px;">You have now completed the practice session! </p>
       <p style="font-size:20px;">You will now move on to the main experiment, where you will not be provided any feedback. </p>
       <p style="font-size:20px;">Remember, you should press <strong>S</strong> if the pictured object was mentioned in the preceding sentence<br> and <strong>N</strong> if the pictured object was not mentioned in the preceding sentence.</p>
-      <p style="font-size:20px;">Please read the sentences carefully as you will be asked some <span style='color:#508AB0;'>comprehension questions </span> at random points during the experiment. </p>
-      <p style="font-size:20px;">For these questions, make sure you are answering yes/no based on the content mentioned in the sentence.</p>
+      <p style="font-size:20px;">You will first make judgements about a block of sentences in one language before making judgements about a block of sentences in the other.</p>
       <p style="font-size:20px;">Please click the button below to continue to the main experiment. </p>`,
       choices: ['Continue'],
       data: {
@@ -310,8 +310,6 @@ var demoinstructions = {
   <p style="font-size:20px;"> You have completed the experiment portion! </p>
   <p style="font-size:20px;"> Before you are done, we would like you to answer some basic demographic questions. </p>
   <p style="font-size:20px;"> Note that your answers to these questions will not affect your compensation/credit. </p>
-  <p style="font-size:20px;"> While some questions are required (*) to obtain some basic information about our recruitment sample <p>
-  <p style="font-size:20px;"> you can choose to skip other questions that you do not feel comfortable answering. </p>
   <p style="font-size:20px;"> Click the button below to continue.</p>
   `,
   choices: ['Continue'],
@@ -401,7 +399,7 @@ var demo_procedure = {
     timeline: [demo_1, demo_2,demo_3, demo_5]
   }
 
-var completion_code = '<strong>Your completion code is: ' + subject_id + ". Please copy-paste this code and submit it on Prolific.</strong>"
+var completion_code = '<strong>Your completion code is: CXEJB7NH. Please copy-paste this code and submit it on Prolific.</strong>'
 
 var endexperiment = {
     type: jsPsychHtmlButtonResponse,
